@@ -1,0 +1,5 @@
+package in.arunIt.rest;
+
+public class WelcomeRestController {
+
+}

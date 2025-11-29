@@ -1,0 +1,9 @@
+package in.arunIt.rest;
+
+public class WelcomeRestController {
+
+	public String welcomeMsg() {
+		String msg="Welcome To Ashoka IT";
+		return msg;
+	}
+}

@@ -1,0 +1,33 @@
+package in.arunIt.service;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import in.arunIt.repo.UserRepository;
+import in.arunIt.utils.EmailUtils;
+import in.arunIt.entity.User;
+
+@Service
+public class UserServiceImpl implements UserService {
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	@Autowired
+	private EmailUtils emailutils;
+
+	@Override
+	public boolean saveUser(User user) {
+		User savedUser = userRepository.save(user);
+		if(savedUser.)
+		return false;
+	}
+
+	@Override
+	public User getUser(String eMail, String pwd) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

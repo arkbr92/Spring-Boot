@@ -1,0 +1,5 @@
+package in.arunIt.entity;
+
+public class UserEntity {
+
+}

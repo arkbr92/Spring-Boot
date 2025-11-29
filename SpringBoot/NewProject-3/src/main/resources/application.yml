@@ -1,0 +1,29 @@
+server:
+  port: 8081
+  
+  
+  spring:
+  application:
+    name: NewProject-3
+
+
+
+boot:
+  admin:
+    client:
+      url: http://localhost:1111/
+      
+      
+      
+      eureka:
+      client:
+      serviceUrl:
+      defaultzone: http://localhost:8761/eureka
+      
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+

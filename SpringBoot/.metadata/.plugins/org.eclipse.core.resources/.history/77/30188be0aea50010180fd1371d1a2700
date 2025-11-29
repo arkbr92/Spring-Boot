@@ -1,0 +1,19 @@
+package in.arunIt.binding;
+
+import jakarta.persistence.Entity;
+import lombok.Data;
+
+@Data
+@Entity
+public class Ticket {
+	
+	private Integer tId;
+	private String name;
+	private String doj;
+	private String email;
+	private String gender;
+	private String source;
+	private String destination;
+	private String trainStatus;
+
+}

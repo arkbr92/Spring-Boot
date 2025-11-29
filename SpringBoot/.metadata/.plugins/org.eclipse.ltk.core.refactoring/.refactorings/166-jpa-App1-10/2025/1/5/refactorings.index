@@ -1,0 +1,6 @@
+1738305497367	Extract local variable 'asList'
+1738305708088	Extract local variable 'run'
+1738305734934	Extract local variable 'bean'
+1738306565741	Extract local variable 'findById'
+1738306614859	Extract local variable 'employee'
+1738306672931	Extract local variable 'addressList'

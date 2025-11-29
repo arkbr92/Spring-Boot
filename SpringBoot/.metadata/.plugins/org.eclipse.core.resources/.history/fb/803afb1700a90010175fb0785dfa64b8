@@ -1,0 +1,2 @@
+spring.application.name=02-Admin-Registry
+server.port=8081

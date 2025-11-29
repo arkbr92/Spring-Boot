@@ -1,0 +1,8 @@
+1758894230589	Delete element
+1758894534253	Extract local variable 'findById'
+1758894737051	Extract local variable 'findAll'
+1758895363419	Extract local variable 'upsert'
+1758895833551	Extract local variable 'byId'
+1758896123524	Extract local variable 'allCourses'
+1758902836512	Extract local variable 'upsert'
+1758903333892	Extract local variable 'deleteById'

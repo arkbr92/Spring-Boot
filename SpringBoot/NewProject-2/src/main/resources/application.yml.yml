@@ -1,0 +1,16 @@
+admin: ''
+application: ''
+boot: ''
+client: ''
+defaultZone: http://localhost:8761/eureka
+endpoints: ''
+eureka: ''
+exposure: ''
+include: '''''''*'''''''
+management: ''
+name: NewProject-2
+server: port=1111
+serviceUrl: ''
+spring: ''
+url: http://localhost:9090/
+web: ''

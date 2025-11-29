@@ -1,0 +1,15 @@
+package in.arunIt.service;
+
+import java.util.List;
+
+import in.arunIt.binding.Passenger;
+import in.arunIt.binding.Ticket;
+
+public interface TicketService {
+	
+	public Ticket bookTicket(Passenger passanger);
+	public Ticket getTicket(Integer ticketId);
+	public List<Ticket> getAllTickets();
+
+
+}

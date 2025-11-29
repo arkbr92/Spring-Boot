@@ -1,0 +1,24 @@
+package in.arunIt.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import in.arunIt.binding.Ticket;
+import in.arunIt.service.MakeMyTripService;
+import reactor.core.publisher.Mono;
+
+public class MakeMyTripController  {
+	
+	
+	@Autowired
+	private MakeMyTripService makeMyTripService;
+	
+	makeMyTripService.
+	
+	public Mono<Ticket> bookTicket(){
+		
+		
+		return null;
+		
+	}
+
+}

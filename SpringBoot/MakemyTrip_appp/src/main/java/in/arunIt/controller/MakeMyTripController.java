@@ -1,0 +1,44 @@
+package in.arunIt.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.arunIt.binding.Passanger;
+import in.arunIt.binding.Ticket;
+import in.arunIt.service.MakeMyTripService;
+import reactor.core.publisher.Mono;
+
+
+@RestController
+public class MakeMyTripController  {
+	
+	
+	@Autowired
+	private MakeMyTripService makeMyTripService;
+	
+
+	
+	@PostMapping("/ticket")
+	public ResponseEntity< Mono<Ticket>> bookTicket(Passanger passanger){
+		
+		Mono<Ticket> bookTicket = makeMyTripService.bookTicket(passanger);
+		
+		
+		return new ResponseEntity<>(bookTicket, HttpStatus.CREATED);
+		
+	}
+	
+	
+	@GetMapping("/tickets")
+	public ResponseEntity< Mono<Ticket[]>> getAllTickets(){
+		Mono<Ticket[]> allTickets = makeMyTripService.getAllTickets();
+		return new ResponseEntity<> (allTickets, HttpStatus.OK);
+		
+	}
+	
+
+}

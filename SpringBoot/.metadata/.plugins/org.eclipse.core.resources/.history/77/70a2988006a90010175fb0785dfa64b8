@@ -1,0 +1,10 @@
+package in.arunIt.rest;
+
+public class WelcomeRestController {
+	public String welcome() {
+		String msg = "Welcome To ArubIt";
+		return msg;
+		
+	}
+
+}

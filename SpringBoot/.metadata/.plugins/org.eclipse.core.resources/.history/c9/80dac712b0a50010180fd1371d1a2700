@@ -1,0 +1,60 @@
+package in.arunIt.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cglib.core.Block;
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.BodyInserters;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import in.arunIt.binding.Passanger;
+import in.arunIt.binding.Ticket;
+import in.arunIt.repo.MakeMytripRepository;
+import reactor.core.publisher.Mono;
+
+
+@Service
+public class MakeMyTripService {
+	
+	
+	
+	private final String apiUrl= "http://localhost:8081/ticket";
+	private final String apiUr= "http://localhost:8081/tickets";
+	
+	
+	
+	public Mono<Ticket> bookTicket(Passanger p) {
+		
+		
+		WebClient webclient = WebClient.create();
+		 Mono<Ticket> bodyToMono = webclient.post()
+		                               .uri(apiUrl)
+		                               .body(BodyInserters.fromValue(p))
+		                               .retrieve()
+		                               .bodyToMono(Ticket.class);
+		                               
+		  return bodyToMono;
+		
+		
+		
+		
+	}
+	public Mono<Ticket[]> getAllTickets() {
+		
+		
+		WebClient create = WebClient.create();
+		
+		Mono<Ticket[]> bodyToMono = create.get()
+		                            .uri(apiUr)
+		                            .retrieve()
+		                            .bodyToMono(Ticket[].class);
+		
+		
+		
+		
+		return bodyToMono;
+		
+	}
+	
+	
+
+}

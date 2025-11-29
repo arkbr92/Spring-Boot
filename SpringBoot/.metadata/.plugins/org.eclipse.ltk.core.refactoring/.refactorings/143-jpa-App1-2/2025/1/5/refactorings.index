@@ -1,0 +1,7 @@
+1738061102753	Extract local variable 'findAll'
+1738062307481	Extract local variable 'findByEname'
+1738062621014	Extract local variable 'findByEsalary'
+1738062800092	Extract local variable 'findByEsalaryGreaterThanEqual'
+1738073244411	Extract local variable 'allEmpByHQL'
+1738073623651	Extract local variable 'empById'
+1738074107458	Extract local variable 'allEmps'

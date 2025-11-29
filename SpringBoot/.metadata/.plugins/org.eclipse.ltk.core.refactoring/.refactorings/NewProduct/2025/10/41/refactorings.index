@@ -1,0 +1,8 @@
+1760114101522	Extract local variable 'save'
+1760114430439	Extract local variable 'save'
+1760114605721	Extract local variable 'byId'
+1760114729912	Extract local variable 'findById'
+1760115450862	Extract local variable 'saveProduct'
+1760115924197	Extract local variable 'allProducts'
+1760117109846	Extract local variable 'findById'
+1760117438802	Extract local variable 'productById'

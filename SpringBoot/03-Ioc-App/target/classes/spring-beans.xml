@@ -1,0 +1,15 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+<bean id="debit" class="in.arunIT.beans.DebitCardPayment"/> 
+<bean id="credit" class="in.arunIT.beans.CreditCardPayments"/>
+
+<bean id="Restorent" class="in.arunIT.beans.RestorentServices"/>
+
+
+</beans>

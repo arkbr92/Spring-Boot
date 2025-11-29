@@ -1,0 +1,8 @@
+1738514305503	Extract local variable 'saveAll'
+1738514524942	Extract local variable 'run'
+1738514560761	Extract local variable 'bean'
+1738518476479	Delete element
+1738518712428	Delete element
+1738518921670	Extract local variable 'save'
+1738519462830	Extract local variable 'saveBook'
+1738519786280	Extract local variable 'allBooks'

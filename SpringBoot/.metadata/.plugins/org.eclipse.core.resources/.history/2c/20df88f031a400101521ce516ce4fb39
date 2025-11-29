@@ -1,0 +1,29 @@
+package in.arunIt.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import in.arunIt.binding.Passenger;
+import in.arunIt.binding.Ticket;
+import in.arunIt.service.TicketService;
+import in.arunIt.service.TicketServiceImpl;
+
+public class TicketController {
+	
+	@Autowired
+	private TicketServiceImpl ticketService;
+	
+	@PostMapping("/ticket")
+	public ResponseEntity<Ticket> bookTicket(@RequestBody Passenger passenger) {
+		
+	
+
+	Ticket ticket=ticketService.bookTicket(passenger);
+	return new ResponseEntity<Ticket>(ticket,HttpStatus.CREATED);
+	
+	}
+}

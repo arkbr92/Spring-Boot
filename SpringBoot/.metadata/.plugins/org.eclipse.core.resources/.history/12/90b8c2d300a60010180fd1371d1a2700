@@ -1,0 +1,13 @@
+package in.arunIt.binding;
+
+import java.time.LocalDate;
+
+import lombok.Data;
+
+@Data
+public class ExInfo {
+	private String exCode;
+	private String exMsg;
+	private LocalDate exDate;
+
+}

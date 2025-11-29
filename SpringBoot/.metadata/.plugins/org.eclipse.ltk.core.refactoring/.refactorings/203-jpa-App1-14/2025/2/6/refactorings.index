@@ -1,0 +1,5 @@
+1738656755129	Extract local variable 'save'
+1738658728337	Extract local variable 'savePtroduct'
+1738659432176	Extract local variable 'allProducts'
+1738661097162	Extract local variable 'run'
+1738661149564	Extract local variable 'bean'

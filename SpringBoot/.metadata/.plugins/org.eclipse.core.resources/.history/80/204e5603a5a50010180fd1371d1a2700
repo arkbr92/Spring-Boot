@@ -1,0 +1,26 @@
+package in.arunIt.service;
+
+import org.springframework.cglib.core.Block;
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import in.arunIt.binding.Passanger;
+import in.arunIt.binding.Ticket;
+
+public class MakeMyTripService {
+	
+	public void bookTicket(Passanger p) {
+		
+		String apiUrl= "";
+		WebClient webclient = WebClient.create();
+		Ticket responce = webclient.get()
+		.uri(apiUrl)
+		.retrieve()
+		.bodyToMono(Ticket.class)
+		.block();
+		System.out.println(responce);
+		
+		
+	}
+
+}
